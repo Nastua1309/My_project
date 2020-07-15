@@ -6,4 +6,4 @@ if (str == str_check){
     console.log(true);
 } else{
     console.log(false);
-}   
+    }   
