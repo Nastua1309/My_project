@@ -1,0 +1,31 @@
+<title>Hello</title>
+<div>
+<button type="button" id="Hello">Hello!</button>
+<script>
+document.getElementById("Hello").onclick= function(){
+    alert("Привет");
+}
+</script>
+</div>
+
+<div>
+<button type="button" id="Text">Сhange the text!</button>
+<input type="text" id="text"  placeholder="text">
+<script>
+    document.getElementById("Text").onclick= function(){
+        document.getElementById('text').value="Changed";
+    }
+    </script>
+</div>
+
+
+<div>
+    <button type="button" id="Color">Сhange the color!</button>
+    <input type="text" id="color_ch"  placeholder="text">
+    <script>
+        document.getElementById("Color").onclick= function(){
+        document.getElementById('color_ch').style.color ="red" ;
+
+        }
+        </script>
+    </div>
