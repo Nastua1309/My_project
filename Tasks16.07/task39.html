@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <ul>
+            <li>уточка</li>
+            <li>собачка</li>
+            <li>котик</li>
+            <li>Стич</li>
+            <li>мишка</li>
+        </ul>
+            <button>Больше интересностей</button>
+        <script>
+            var ul = document.querySelector('ul');
+            var button = document.querySelector('button');
+            button.addEventListener('click', addLi);
+            function addLi(event){
+                var li = document.createElement('li');
+                li.innerHTML = 'пункт';
+                ul.appendChild(li);
+            }
+            ul.addEventListener('click', addToken);
+            function addToken(event){
+                event.target.innerHTML += '!';
+            }
+        </script>
+    </body>
+</html>
