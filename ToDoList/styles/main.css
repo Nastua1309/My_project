@@ -45,12 +45,11 @@ body {
     background-color: #555;
     border: none;
     color: white;
-    padding: 8px 20px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 18px;
-    border-radius: 4px;
+    font-size: 20px;
     font-family: "MV BOLI";
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
@@ -64,7 +63,7 @@ body {
   #buttons {
     display: inline-block;
     text-align: center;
-    margin-left: 30%;
+    margin-left: 37%;
     position: absolute;
     bottom: 5px; }
   
@@ -94,14 +93,14 @@ body {
     top: 15px;
     right: 40px;
     font-size: 60px;
-    color: #795a38;
+    color: #000000;
     cursor: pointer; }
   
   #overlay li {
     padding: 8px;
     list-style-type: circle;
     font-size: 30px;
-    color: #818181;
+    color: #ebe3e3;
     display: block; }
   
   .todos {
@@ -156,5 +155,33 @@ body {
       right: 35px; }
     #todo {
       width: 100%;
-      height: 100%; } }
+      height: 100%; } 
+    }
+
+  #overlay2 {
+    height: 0;
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-x: hidden;
+    transition: 0.5s;
+    -webkit-transition: 0.5s; }
   
+  #overlay2 .close2btn {
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer; }
+    #overlay2 p {
+      padding: 8px;
+      list-style-type: circle;
+      font-size: 16px;
+      color: #ebe3e3;
+      display: block;
+      font-family: "MV BOLI";
+    }

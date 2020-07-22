@@ -5,25 +5,32 @@
         <link rel = "Stylesheet" href = "./styles/main.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
-       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="./scripts/jquery.js"></script>
      </head>
   
     <body>
-  
-        <div id = "todo">
+        <div id = "todo" >
             <h1> My list of cases <i id="pencil" class="fas fa-pencil-alt"></i> </h1>
-  
-            <input type = "text" placeholder="Do you have a new case?">
-  
-            <ul class="todos">
-                
-            </ul>
-  
-            <div id= "buttons">
-                <button class="save">Save</button>
-                <button class="clear">Clear</button>
-                <button class="tipBtn">Tips</button>
-            </div>
+            <div class="container" data-control="wheel">
+                <div class="viewport-wrapper">
+                    <div class="viewport">
+                        <div class="content">
+    
+                            <input type = "text" placeholder="Do you have a new case?" maxlength="50">
+        
+                            <ul class="todos"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+           
+        </div>
+        <div id= "buttons">
+            <button class="save">Save</button>
+            <button class="clear">Clear</button>
+            <button class="tipBtn">Tips</button>
+            <button class="weatherpBtn">Weather</button>
         </div>
   
         <div id = "overlay">
@@ -35,7 +42,12 @@
                <li>Click the clear button to clear all todos from list</li>
                <li>Click the Save button to save your todos to access them later even if you exit the browser </li>
             </ul>
-            
         </div>
-        <script src="./scripts/main.min.js"></script>
+        <div id = "overlay2">
+            <a href="javascript:void(0)" class="close2btn">&times;</a>
+            <p id="weather">Нижний Новгород ,  <spantemp id="temp"></spantemp><spanznak>°C</spanznak></p> 
+         </div>
     </body>
+    <script   src="./scripts/main.min.js" type="module"></script>
+    <script  src="./scripts/click_events.js" type="module" ></script>
+    
