@@ -29,7 +29,7 @@ closeBtn.addEventListener("click", function(){
      overlay.style.height="0";
 });
 weatherpBtn.addEventListener("click", function(){
-   overlay2.style.height="10%";
+   overlay2.style.height="15%";
 });
 close2Btn.addEventListener("click", function(){
    overlay2.style.height="0";
