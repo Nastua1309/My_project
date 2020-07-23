@@ -9,7 +9,8 @@
         <script src="./scripts/jquery.js"></script>
      </head>
   
-    <body>
+    <body> 
+        <!-- Сalendar -->
         <div id ="div_calendar">
             <a href="javascript:void(0)" class="close3btn">&times;</a>
             
@@ -20,7 +21,9 @@
               </thead>
               <tbody></tbody>
             </table>   
-            
+        <!-- End Сalendar -->
+
+
         </div>
         <div id = "todo" >
             <h1> My list of cases <i id="pencil" class="fas fa-pencil-alt"></i> </h1>
@@ -35,7 +38,7 @@
                         </div>
                     </div>
                 </div>
-            </div><br>
+            </div>
            
         </div>
         <div id= "buttons">
@@ -45,7 +48,7 @@
             <button class="weatherpBtn">Weather</button>
             <button class="calendarBtn">Сalendar</button>
         </div> 
-  
+        <!-- Overlay 1 -->
         <div id = "overlay">
            <a href="javascript:void(0)" class="closebtn">&times;</a>
            <ul class="tips">
@@ -56,12 +59,17 @@
                <li>Click the Save button to save your todos to access them later even if you exit the browser </li>
             </ul>
         </div>
+        <!-- End Overlay 1 -->
+
+
+         <!-- Overlay 2 - weather  -->
         <div id = "overlay2">
             <a href="javascript:void(0)" class="close2btn">&times;</a>
             <p id="weather">Nizhny Novgorod ,  <spantemp id="temp"></spantemp><spanznak>°C</spanznak></p> 
             <p id="weather">feels like  <spantemp id="feels_like"></spantemp><spanznak>°C</spanznak></p> 
     
          </div>
+        <!-- End Overlay 2 -->
     </body>
     <script   src="./scripts/main.min.js" type="module"></script>
     <script  src="./scripts/click_events.js" type="module" ></script>

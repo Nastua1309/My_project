@@ -1,3 +1,5 @@
+
+// загрузка данных о погоде с использованием API
 $(document).ready(function() {
   $.get(
       "http://api.openweathermap.org/data/2.5/weather",

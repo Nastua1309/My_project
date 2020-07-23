@@ -11,7 +11,10 @@ var pencil = document.querySelector("#pencil");
 var overlay = document.getElementById("overlay");
 var calendarBtn = document.querySelector(".calendarBtn");
 import {DeleteTodo} from './main.min.js';
- function Button_f (){
+ 
+// Функции по нажатию на кнопки
+
+function Button_f (){
 clearBtn.addEventListener('click', function () {
     ul.innerHTML= "";
     localStorage.removeItem("todoList", ul.innerHTML);
@@ -43,6 +46,7 @@ close2Btn.addEventListener("click", function(){
 });
 } 
 
+// функция добавления элементов в список
 function icons_f (){
    input.addEventListener ("keypress", function(key){
       if(key.which ===13){
@@ -63,7 +67,8 @@ function icons_f (){
           }
       }
    });
-  
+   
+   // Скрытие input
 ul.addEventListener('click', function (e) {
    if(e.target.tagName === "LI") {
       e.target.classList.toggle('checked');
