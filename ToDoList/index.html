@@ -10,6 +10,18 @@
      </head>
   
     <body>
+        <div id ="div_calendar">
+            <a href="javascript:void(0)" class="close3btn">&times;</a>
+            
+            <table id="calendar" >
+              <thead>
+                <tr><td><b>‹</b><td colspan="5"><td><b>›</b>
+                <tr><td>Mon<td>Tue<td>Wed<td>Thu<td>Fri<td>Sat<td>Sun
+              </thead>
+              <tbody></tbody>
+            </table>   
+            
+        </div>
         <div id = "todo" >
             <h1> My list of cases <i id="pencil" class="fas fa-pencil-alt"></i> </h1>
             <input type = "text" placeholder="Do you have a new case?" maxlength="50">
@@ -31,7 +43,8 @@
             <button class="clear">Clear</button>
             <button class="tipBtn">Tips</button>
             <button class="weatherpBtn">Weather</button>
-        </div>
+            <button class="calendarBtn">Сalendar</button>
+        </div> 
   
         <div id = "overlay">
            <a href="javascript:void(0)" class="closebtn">&times;</a>

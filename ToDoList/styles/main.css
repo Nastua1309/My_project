@@ -63,7 +63,7 @@ body {
   #buttons {
     display: inline-block;
     text-align: center;
-    margin-left: 37%;
+    margin-left: 33%;
     position: absolute;
     bottom: 5px; }
   
@@ -186,6 +186,8 @@ body {
       font-family: "MV BOLI";
   }
 
+
+
   .container {
     width: 600px;
     height: 555px;
@@ -207,8 +209,7 @@ body {
     top: 0;
     bottom: 0px;
   }
-
-  ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 12px;
 }
  
@@ -220,4 +221,52 @@ body {
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+ 
+
+#calendar {
+  background: white;
+  width: 90%;
+  font: monospace;
+  line-height: 1.7em;
+  font-size: 18px;
+  text-align: center;
+  border: solid 1px #362828;
+}
+#calendar thead tr:last-child {
+  font-size: small;
+  color: rgb(85, 85, 85);
+}
+#calendar thead tr:nth-child(1) td:nth-child(2) {
+  color: rgb(50, 50, 50);
+}
+#calendar thead tr:nth-child(1) td:nth-child(1):hover, #calendar thead tr:nth-child(1) td:nth-child(3):hover {
+  cursor: pointer;
+}
+#calendar tbody td {
+  color: rgb(44, 86, 122);
+}
+#calendar tbody td:nth-child(n+6), #calendar .holiday {
+  color: rgb(231, 140, 92);
+}
+#calendar tbody td.today {
+  background: rgb(220, 0, 0);
+  color: #fff;
+}
+#div_calendar{
+  visibility:hidden;
+  display: inline-block;
+  margin-left: 4%;
+  width:300px; 
+ 
+  position: fixed; 
+  top:200px;
+}
+#div_calendar .close3btn {
+
+  position: absolute;
+    right: 10px;
+    font-size: 22px;
+    color: #000000;
+    cursor: pointer;
 }

@@ -2,21 +2,28 @@ var tipsBtn = document.querySelector(".tipBtn");
 var weatherpBtn = document.querySelector(".weatherpBtn");
 var closeBtn = document.querySelector(".closebtn");
 var close2Btn = document.querySelector(".close2btn");
+var close3Btn = document.querySelector(".close3btn");
 var saveBtn = document.querySelector(".save");
 var clearBtn = document.querySelector(".clear");
 var input = document.querySelector("input[type='text']");
 var ul = document.querySelector("ul");
-var lists = document.querySelectorAll("li");
-var spans = document.getElementsByTagName("span");
 var pencil = document.querySelector("#pencil");
 var overlay = document.getElementById("overlay");
+var calendarBtn = document.querySelector(".calendarBtn");
 import {DeleteTodo} from './main.min.js';
  function Button_f (){
 clearBtn.addEventListener('click', function () {
     ul.innerHTML= "";
     localStorage.removeItem("todoList", ul.innerHTML);
    });
- 
+
+calendarBtn.addEventListener('click', function () {
+   div_calendar.style. visibility= "visible";
+   });
+close3Btn.addEventListener("click", function(){
+   div_calendar.style. visibility= "hidden";
+   });
+
  saveBtn.addEventListener('click', function () {
     localStorage.setItem ("todoList", ul.innerHTML);
  });
